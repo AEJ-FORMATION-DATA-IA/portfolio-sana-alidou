@@ -15,7 +15,7 @@ body {
   color: white;
 }
 .igs-accueil-fond-vert_image {
-  background-image: url("/assets/images/vacutainer.jpg");
+  background-image: url("../images/vacutainer.jpg");
   background-size: cover;
   background-color: green;
   background-repeat: no-repeat;
