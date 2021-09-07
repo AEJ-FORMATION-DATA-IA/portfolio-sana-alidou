@@ -30,9 +30,7 @@ body {
 #igs-section-aproposmoi a {
   color: white;
 }
-.igs-apropos-dispositionligne-blanche {
-  background: white;
-}
+
 /*position*/
 .igs-menu-haut-centre {
   position: fixed; 
@@ -41,7 +39,7 @@ body {
   display: flex;
   justify-content: center;
 }
-.igs-contenu {
+.igs-contenu-body {
   display: flex;
   flex-direction: column;
 }
@@ -68,11 +66,33 @@ body {
   text-align: center;
   margin-bottom: 50px;
 }
-.igs-apropos-dispositionligne {
+.igs-dispositionligne {
   display: flex;
 }
-.igs-apropos-flexible-centre {
+.igs-flexible-centre {
   flex: 0 0 16.6%;
+}
+.igs-contenu-section {
+  flex: 0 1 66.6%;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+.igs-sectionappele {
+  display: block;
+  position: relative;
+  top: -70px;
+  visibility: hidden;
+}
+.igs-contenu-section-entete{
+  display: flex;
+  justify-content: center;
+}
+
+.photo_identite{
+  width: 25%;
+  height: 25%;
+  border-radius: 40%;
+  background: #000;
 }
 /*texte*/
 .igs-menu-lien-gras {
@@ -96,37 +116,30 @@ body {
 .igs-accueil-text-montitre-gras {
   margin: 0;
 }
+.igs-contenu-section-body {
+  line-height: 1.5;
+  color: rgba(0,0,0,.75);
+  text-align: justify;
+}
 /*effet*/
-.igs-apropos-dispositionligne-ombre {
+.igs-dispositionligne-ombre {
   -webkit-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
   box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
 }
 
-.anchor {
-  display: block;
-  position: relative;
-  top: -70px;
-  visibility: hidden;
-}
 
-.main-content {
-  flex: 0 0 66.6%;
-  margin-top: 2rem;
-  margin-bottom: 3rem;
-}
+
 
 .side-content-sm {
   flex: 0 0 10%;
 }
 
-.main-content-lg {
+.igs-contenu-section-lg {
   flex: 0 0 80%;
   margin-top: 2rem;
   margin-bottom: 3rem;
 }
-
-
 
 h2 {
   font-weight: 200;
@@ -134,11 +147,6 @@ h2 {
   color: #31b0d5;
   text-transform: uppercase;
   text-align: center;
-}
-
-.content-body {
-  line-height: 1.5;
-  color: rgba(0,0,0,.75);
 }
 
 /*EDUCATION*/
